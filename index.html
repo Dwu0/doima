@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Đổi Mã</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <?php
+  echo "mã của bạn:";
+  $nhap_ma = <input type="text" name="macuaban"/>;
+  if($nhap_ma == "L-pisudyb") {
+  echo "quà";
+  $file_ma = fopen("madoiqua.txt", "w");
+  $viet_ma = ("L-pisudyb");
+  fwrite ($file_ma, $viet_ma);
+  fclose($file_ma);
+  $bat_file = fopen("madoiqua.txt", "r");
+  }elseif($nhap_ma == $bat_file) {
+  echo "Mã của bạn đã bị sử dụng!";
+  fclose($bat_file);
+  }else {
+  echo "Mã của bạn không đúng!";
+  };
+  ?>
+</body>
+
+</html>
